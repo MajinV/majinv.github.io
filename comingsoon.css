@@ -9,9 +9,17 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
+    background: linear-gradient(
+      0deg,
+      rgba(108, 108, 108, 0.5),
+      rgba(108, 108, 108, 0.5)
+    ),
+    url(images/main-banner.png) left 0% bottom 60%/cover no-repeat border-box;
+  background-blend-mode: lighten, normal;
 }
 .container{
     border: 2px solid rgba(119, 119, 119, 0.5);
+    background-color: rgba(255, 255, 255, .75);
     border-radius: 8px;
     width:60%;;
     margin-left:auto; 
