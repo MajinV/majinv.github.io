@@ -1,41 +1,23 @@
 html {
   box-sizing: border-box;
-  height: 120%;
+  height: 100%;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
-  height:100%;
-}
-
-.main-header {
-  /* position: fixed; */
-  /* top: 0;
-  left: 0; */
-  height:30%;
-  width: 100%;
-  z-index: 1;
-}
-
-.main-header__brand {
-    position: absolute;
-  height: 80px;
-  vertical-align: middle;
-  display: inline-block;
-  padding: 8px 16px;
-  right:16px;
-  
-}
-
-.main-header__brand img {
   height: 100%;
 }
 
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
+header {
+  height: 20%;
+}
+
+#main-header {
+  height: 100%;
+  /* width: 100%; */
+  z-index: 1;
 }
 
 .nav {
@@ -48,7 +30,7 @@ body {
       rgba(108, 108, 108, 0.5),
       rgba(108, 108, 108, 0.5)
     ),
-    url(images/main-banner.png) left 0% bottom 60%/cover no-repeat border-box;
+    url(images/main-banner.png) left 0% bottom 60% / cover no-repeat border-box;
   background-blend-mode: lighten, normal;
   margin: auto;
   color: rgb(255, 255, 255);
@@ -59,7 +41,6 @@ body {
   vertical-align: middle;
   font-size: 1.8rem;
   padding: 0 50px;
-  
 }
 
 .nav__links {
@@ -87,96 +68,144 @@ body {
   color: rgb(158, 158, 158);
 }
 
-main{
-    position: relative;
-    height: 30%;
+.main-header__brand {
+  /* position: absolute; */
+  height: 80px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 8px 16px;
+  float: right;
 }
 
-#site-banner {
-  width: 60%;
+.main-header__brand img {
   height: 100%;
-  position: absolute;
-  top: 30%;
-  right:32px;
-  /* left: 60%; */
-  /* top:360px; */
+}
+
+
+main {
+  /* position: relative; */
+  height: 65%;
+}
+
+#headline-container {
+  width: 100%;
+  height: 34%;
   color: #444444;
-  /* border: dashed gray 1px; */
   text-align: right;
+  display: inline-block;
 }
 
-#site-banner > h1 {
-  position: relative;
-
-    font-size: 1.2rem;
-    padding-bottom: 16px;
+.headline-container__tagline {
+  float: right;
+  width: 60%;
+  padding-right: 32px;
 }
 
-#site-banner > p {
-    position: relative;
-    font-size: 1.0rem;
-    
+.headline-container__tagline > h1 {
+  /* position: relative; */
+  font-size: 1.2rem;
+  padding-bottom: 16px;
+  padding-top: 32px;
+
+  text-align: right;
+  
 }
 
-footer{
-    position: relative;
-    display: block;
-    margin:auto;
-    width:100%;
+.headline-container__tagline > p {
+  /* position: relative; */
+  font-size: 1rem;
+  text-align: right;
+  margin:0;
 }
 
-.main-footer {
+#etsy-container {
+
+  height: 33%;
+  width: 100%;
+  background-color: #e0e0e0;
+}
+
+#seasons-container {
+
+  height: 33%;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.seasons-container_info-shape {
+  width: 132px;
+  height: 132px;
+  background-color: rgb(190, 190, 190);
+  border-radius: 50%; 
+  display: inline-block;
+  padding:8px;
+  margin: 16px 24px;
+  text-align: center;
+  
+}
+
+footer {
+  margin: auto;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #4b4b4b;
+  height:15%;
+}
+
+#footer-container {
   width:100%;
-  height: 200px;
-  background-color: #b4b4b4;
-  position: relative;
-  display: block;
-  margin:auto;
+  height:100%;
+  margin: auto;
+  text-align: center;
 }
 
 .main-footer__info {
-  position: relative;
-  height:auto;
-  width:40%;
+  width: 30%;
+  height: 100px;
+  display: inline-block;
+
   background-color: white;
   border-radius: 8px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top: 16px;
-  padding: 16px;
-
+  margin-top: 32px;
+}
+.main-footer__info ul {
+  padding:0;
+  margin:0;
 }
 
 .main-footer__info-columns {
-    width:100%;
-    list-style-type: none;
-    display: inline-block;
-    vertical-align: middle;
-    margin:auto;
-  }
+  list-style-type: none;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin:auto;
+  padding:8px 0;
   
- .main-footer__info-column{
-   width:45%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    
- } 
-  .info-column__link {
-    list-style-type: none;
-    vertical-align: middle;
-    text-align: center;
-  }
-  
-  .info-column__link a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: rgb(124, 124, 124);
-    vertical-align: middle;
-    text-align: center;
-  }
-  
+}
 
+.main-footer__info-column {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  padding:16px 8px;
+}
+
+.info-column__link {
+  list-style-type: none;
+  vertical-align: middle;
+  /* text-align: center; */
+}
+
+.info-column__link a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(124, 124, 124);
+  vertical-align: middle;
+  /* text-align: center; */
+}
 
 /* Rectangle 3 */
