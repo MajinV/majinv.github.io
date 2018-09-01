@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  height: 12rem;
+  /* height: 12rem; */
   width: 100%;
 }
 
@@ -95,12 +95,14 @@ header {
 
 .main-header__brand {
   /* position: absolute; */
+  width:5rem;
   height: 5rem;
   vertical-align: middle;
   /* display: inline-block; */
-  padding: 0.5rem 1rem;
-  float: right;
+  /* padding: 0.5rem 1rem; */
+  /* float: right; */
   filter: none;
+  margin:auto;
 }
 
 .main-header__brand img {
@@ -127,11 +129,10 @@ main {
 
 .headline-container__tagline {
   /* float: right; */
-  display: inline-block;
-  width: 65%;
+  width: 100%;
   margin: auto;
   vertical-align: middle;
-  padding-left:1rem;
+  /* padding-left:1rem; */
 }
 
 .headline-container__tagline > h1 {
@@ -139,24 +140,24 @@ main {
   font-size: 1.2rem;
   /* padding: 16px 0; */
 
-  text-align: right;
+  text-align: center;
 }
 
 .headline-container__tagline > p {
   /* position: relative; */
   font-size: 1rem;
-  text-align: right;
+  text-align: center;
   margin: 0;
 }
 
 footer {
   font-family: "Laila", serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: auto;
   width: 100%;
   vertical-align: middle;
   background-color: #b1b1b1;
-  height: 12rem;
+  /* height: 12rem; */
 }
 
 #footer-container {
@@ -167,13 +168,14 @@ footer {
 }
 
 .main-footer__info {
-  width: 50%;
-  height: 9rem;
+  width: 100%;
+  /* height: 9rem; */
   /* display: inline-block; */
   background-color: white;
   border-radius: 0.5rem;
   margin: 1rem auto;
 }
+
 .main-footer__info ul {
   margin: auto;
   padding: 0;
@@ -223,6 +225,42 @@ footer {
 }
 
 @media (min-width: 40rem) {
+
+  .main-header__brand {
+    width:10%;
+    height: 5rem;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    filter: none;
+  }
+
+  .headline-container__tagline {
+    /* float: right; */
+    display: inline-block;
+    width: 65%;
+  }
+
+  .headline-container__tagline > h1 {
+    /* position: relative; */
+    font-size: 1.2rem;
+    /* padding: 16px 0; */
+  
+    text-align: right;
+  }
+
+  .headline-container__tagline > p {
+    /* position: relative; */
+    font-size: 1rem;
+    text-align: right;
+    margin: 0;
+  }
+  
+
+  .main-footer__info {
+    width: 60%;
+  }
+
   .main-footer__info-column__title {
     font-size: 0.9rem;
   }

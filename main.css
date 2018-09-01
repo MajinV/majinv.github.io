@@ -1,8 +1,7 @@
 
 .headline-container__spotlight {
-  width:30%;
+  width:80%;
   height: 80%;
-  display: inline-block;
   vertical-align: middle;
   /* padding-top: 16px; */
   margin:auto;
@@ -76,6 +75,14 @@
 
 
 @media (min-width: 40rem) {
+
+  .headline-container__spotlight {
+    width:30%;
+    height: 80%;
+    display: inline-block;     
+  }
+  
+
   .product {
     display: inline-block;
   }
