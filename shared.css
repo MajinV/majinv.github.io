@@ -117,11 +117,11 @@ main {
 
 #headline-container {
   width: 80%;
-  height: 20rem;
+  /* height: 20rem; */
   color: #444444;
   text-align: right;
   /* display: inline-block; */
-  padding-top: 3rem;
+  padding:  3rem 0;
   margin: auto;
 }
 
@@ -169,7 +169,7 @@ footer {
 .main-footer__info {
   width: 50%;
   height: 9rem;
-  display: inline-block;
+  /* display: inline-block; */
   background-color: white;
   border-radius: 0.5rem;
   margin: 1rem auto;
@@ -184,13 +184,13 @@ footer {
 .main-footer__info-columns {
   list-style-type: none;
   width: 100%;
-  display: inline-block;
+
   vertical-align: middle;
 }
 
 .main-footer__info-column {
   width: 25%;
-  display: inline-block;
+  
   vertical-align: middle;
   text-align: left;
   padding: 0.5rem 0.5rem;
@@ -229,6 +229,16 @@ footer {
 
   .info-column__link a {
     font-size: 0.8rem;
+  }
+
+  .main-footer__info-columns {
+
+    display: inline-block;
+
+  }
+
+  .main-footer__info-column {
+    display: inline-block;
   }
 }
 
