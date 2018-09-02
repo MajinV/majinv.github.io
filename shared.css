@@ -41,6 +41,8 @@ header {
   padding: 2rem 0;
 }
 
+/* #region nav */
+
 .nav {
   width: 80%;
   /* display: block; */
@@ -103,7 +105,7 @@ header {
   height: 5rem;
   vertical-align: middle;
   /* display: inline-block; */
-  /* padding: 0.5rem 1rem; */
+  padding: 0.5rem 1rem;
   /* float: right; */
   filter: none;
   margin:auto;
@@ -114,6 +116,8 @@ header {
   height: 100%;
 }
 
+/* #endregion  nav*/
+
 main {
   /* position: relative; */
   /* height: 65%; */
@@ -123,21 +127,19 @@ main {
 }
 
 #headline-container {
-  width: 80%;
+  width: 100%;
   /* height: 20rem; */
   color: #444444;
-  text-align: right;
-  /* display: inline-block; */
-  padding:  3rem 0;
   margin: auto;
+  padding-top: 2rem;
 }
 
 .headline-container__tagline {
   /* float: right; */
-  width: 100%;
+  width: 90%;
   margin: auto;
   vertical-align: middle;
-  /* padding-left:1rem; */
+  padding-bottom:2rem;
 }
 
 .headline-container__tagline > h1 {
@@ -232,17 +234,34 @@ footer {
 
 @media (min-width: 40rem) {
 
+  
+.nav__header {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin:0 0;
+}
+
+.nav__links {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 0;
+}
+
+
   .main-header__brand {
-    width:10%;
-    height: 5rem;
-    vertical-align: middle;
     display: inline-block;
-    padding: 0.5rem 1rem;
-    filter: none;
+    padding: 0;
+  }
+
+  #headline-container {
+    width: 80%;
+    padding:  3rem 0;
+    margin: auto;
   }
 
   .headline-container__tagline {
     /* float: right; */
+    width: 80%;
     display: inline-block;
     width: 65%;
     padding-right:1rem;
@@ -262,6 +281,7 @@ footer {
     text-align: left;
     margin: 0;
   }
+  
   
 
   .main-footer__info {
