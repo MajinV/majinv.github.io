@@ -11,8 +11,8 @@ body {
   width: 100%;
   /* height: 100%; */
 
-  /* font-family: 'Poiret One', cursive;
-      font-family: 'Forum', cursive;
+   /* font-family: 'Poiret One', cursive; */
+     /* font-family: 'Forum', cursive;
       font-family: 'Arima Madurai', cursive;
       font-family: 'Laila', serif;
       font-family: 'Cherry Swash', cursive; */
@@ -40,6 +40,61 @@ header {
   z-index: 1;
   padding: 2rem 0;
 }
+
+/* #region mobile nav */
+
+.mobile-nav__button {
+  color:white;
+  width:2rem;
+  padding:0 2rem;
+  cursor: pointer;
+}
+
+.mobile-nav__button--close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width:2rem;
+  /* padding:2rem 2rem; */
+ 
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mobile-nav__menu-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
+  height: 100vh;
+  background-color: white;
+  text-align: center;
+}
+
+
+.mobile-nav__menu {
+  width:100%;
+  height: 100%;
+  padding-top:30vh;
+}
+
+.mobile-nav__links {
+  margin:0;
+  padding:0;
+}
+
+.mobile-nav__link {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.mobile-nav__link a {
+  color: #444444;
+  text-decoration: none;
+}
+
+/* #endregion */
+
 
 /* #region nav */
 
@@ -71,6 +126,7 @@ header {
 }
 
 .nav__links {
+  display: none;
   margin: 0;
   padding: 0;
   width: 60%;
@@ -83,11 +139,13 @@ header {
 }
 
 .nav__link {
+  display: none;
   display: inline-block;
   margin: 0 1rem;
 }
 
 .nav__link a {
+  display: none;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
@@ -234,6 +292,9 @@ footer {
 
 @media (min-width: 40rem) {
 
+  .mobile-nav__button {
+    display: none;
+  }
   
 .nav__header {
   display: inline-block;
@@ -247,6 +308,9 @@ footer {
   padding-bottom: 0;
 }
 
+.nav__link a {
+  display: inline-block;
+}
 
   .main-header__brand {
     display: inline-block;
@@ -343,4 +407,8 @@ footer {
   text-align: center;
   vertical-align: middle;
   font-size: 0.6rem;
+}
+
+.display {
+  display: none;
 }
