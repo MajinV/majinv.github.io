@@ -3,12 +3,13 @@ html {
     box-sizing: content-box;
     height:100%;
     width:100%;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
+    font-family: 'Cherry Swash', cursive;
+    color: rgb(255,255,255);
+    margin:0;
     background: linear-gradient(
       0deg,
       rgba(108, 108, 108, 0.5),
@@ -19,13 +20,13 @@ body {
 }
 .container{
     border: 2px solid rgba(119, 119, 119, 0.5);
-    background-color: rgba(255, 255, 255, .75);
-    border-radius: 8px;
-    width:60%;;
+    background-color: rgba(119, 119, 119, .50);
+    /* border-radius: 0.5rem; */
+    width: auto;
     margin-left:auto; 
     margin-right:auto;
-    margin-top:10%;
-    padding: 24px;
+    margin-top:20%;
+    padding: 2rem 0;
     box-shadow:0 12px 8px -8px rgba(0, 0, 0, 0.25);
 }
 
@@ -40,7 +41,7 @@ table.center {
 }
 
 .temporary-banner__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     
     margin:auto;
@@ -72,7 +73,9 @@ table.center {
 }
 
 .temporary-banner__subtitle {
-    
+    font-family: 'Poiret One', serif;
+    font-size:1.5rem;
+    font-weight: 600;
     margin:auto;
     display: block;
     text-align: center;

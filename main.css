@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: 'Cherry Swash', cursive;;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0;
   height:100%;
 }
@@ -23,7 +23,7 @@ body {
   height: 80px;
   vertical-align: middle;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   right:16px;
   
 }
