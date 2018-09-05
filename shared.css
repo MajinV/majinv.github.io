@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: 'Cherry Swash', cursive;
+  font-family: 'Poiret One', cursive;
   font-size: 1rem;
   color: #4b4b4b;
   margin: 0;
@@ -188,7 +188,7 @@ main {
 }
 
 #headline-container {
-  
+  font-weight:500;
   width: 100%;
   /* height: 20rem; */
   color: #444444;
@@ -198,6 +198,7 @@ main {
 
 .headline-container__tagline {
   /* float: right; */
+  font-size:1.5rem;
   width: 90%;
   margin: auto;
   vertical-align: middle;
@@ -206,7 +207,7 @@ main {
 
 .headline-container__tagline > h1 {
   /* position: relative; */
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   /* padding: 16px 0; */
 
   text-align: center;
@@ -214,7 +215,7 @@ main {
 
 .headline-container__tagline > p {
   /* position: relative; */
-  font-size: 1rem;
+  /* font-size: 1rem; */
   text-align: center;
   margin: 0;
 }
