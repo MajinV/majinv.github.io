@@ -35,7 +35,7 @@ header {
       rgba(108, 108, 108, 0.5),
       rgba(108, 108, 108, 0.5)
     ),
-    url(images/main-banner.png) left 0% bottom 60% / cover no-repeat border-box;
+    url(images/main-banner.jpg) left 0% bottom 60% / cover no-repeat border-box;
   background-blend-mode: lighten, normal;
   margin: auto;
   color: rgb(255, 255, 255);
@@ -48,6 +48,7 @@ header {
 /* #region mobile nav */
 
 .mobile-nav__button {
+  
   color: white;
   width: 2rem;
   padding: 0 2rem;
@@ -112,7 +113,7 @@ header {
   display: inline-block;
   vertical-align: middle;
   font-size: 1.8rem;
-  padding: 0 5rem;
+  padding: 0 1rem;
   filter: none;
   margin: 0.5rem 0;
 }
