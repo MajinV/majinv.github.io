@@ -16,7 +16,7 @@ body {
       rgba(108, 108, 108, 0.5),
       rgba(108, 108, 108, 0.5)
     ),
-    url(images/main-banner.png) left 0% bottom 60%/cover no-repeat border-box;
+    url(images/main-banner.jpg) left 0% bottom 30% / cover no-repeat border-box;
   background-blend-mode: lighten, normal;
 }
 .container{
@@ -25,7 +25,7 @@ body {
     top:20vh;
     left:0;
     border: 2px solid rgba(119, 119, 119, 0.5);
-    background-color: rgba(165, 165, 165, 0.25);
+    background-color: rgba(165, 165, 165, 0.5);
     /* border-radius: 0.5rem; */
     
     margin-left:auto; 
