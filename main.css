@@ -19,7 +19,8 @@
 #etsy-container {
   /* font-family: 'Poiret One', cursive; */
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #b6b6b6;
+  color:white;
   
 }
 
@@ -39,6 +40,7 @@
 .etsy__shop-desc {
   width: 100%;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .etsy__shop-desc span {
