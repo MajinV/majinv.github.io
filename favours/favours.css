@@ -1,0 +1,15 @@
+#images-container{
+    width:100vh;
+}
+
+.images-container-image{
+    padding:1rem 0;
+    vertical-align: top;
+}
+
+.images-container-image img{
+    padding:1rem 0;
+    vertical-align: top;
+    width: 100vw;
+    height: auto;
+}
