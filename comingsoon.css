@@ -28,9 +28,10 @@ body {
 .container{
     position: absolute;
     width:100vw;
-    top:15vh;
+    top:12vh;
     left:0;
-    border: 2px solid rgba(119, 119, 119, 0.5);
+    border-top: 2px solid rgba(119, 119, 119, 0.5);
+    border-bottom: 2px solid rgba(119, 119, 119, 0.5);
     background-color: rgba(165, 165, 165, 0.5);
     /* border-radius: 0.5rem; */
     
@@ -52,7 +53,7 @@ body {
 }
 
 .temporary-banner__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     padding-top:1rem;
     margin:auto;
