@@ -2,23 +2,30 @@
 html {
     box-sizing: content-box;
     height:100%;
-    width:100%;
-    font-size: 16px;
+    width:100vw;
+    font-size: 1rem;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
+    width:100vw;
+    font-family: 'Cherry Swash', cursive;
+    color: rgb(255,255,255);
+    margin:0;
     background: linear-gradient(
       0deg,
       rgba(108, 108, 108, 0.5),
       rgba(108, 108, 108, 0.5)
     ),
-    url(images/main-banner.png) left 0% bottom 60%/cover no-repeat border-box;
+    url(images/main-banner.jpg) left 0% bottom 30% / cover no-repeat border-box;
   background-blend-mode: lighten, normal;
 }
 .container{
+    position: absolute;
+    width:100vw;
+    top:20vh;
+    left:0;
     border: 2px solid rgba(119, 119, 119, 0.5);
+<<<<<<< HEAD
     background-color: rgba(255, 255, 255, .75);
     border-radius: 8px;
     width:50%;
@@ -26,6 +33,15 @@ body {
     margin-right:auto;
     margin-top:20%;
     padding: 32px;
+=======
+    background-color: rgba(165, 165, 165, 0.5);
+    /* border-radius: 0.5rem; */
+    
+    margin-left:auto; 
+    margin-right:auto;
+
+    padding: 2rem 0;
+>>>>>>> 8578c6ca3174e99dc7edbc6b5f8644ddbee60a70
     box-shadow:0 12px 8px -8px rgba(0, 0, 0, 0.25);
 }
 
@@ -40,7 +56,7 @@ table.center {
 }
 
 .temporary-banner__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     
     margin:auto;
@@ -72,7 +88,9 @@ table.center {
 }
 
 .temporary-banner__subtitle {
-    
+    font-family: 'Poiret One', serif;
+    font-size:1.5rem;
+    font-weight: 600;
     margin:auto;
     display: block;
     text-align: center;
@@ -82,17 +100,17 @@ table.center {
 .temporary-banner__subtitle a {
     vertical-align: middle;
     text-decoration: none;
-    color: #777777;
-    font-size: 1rem;
+    color: #FFFFFF;
+    font-size: 1.5rem;
     font-weight: 600;
     padding:12px;
-    background-color: #eeeeee;
+    background-color: #F56400;
     border-radius: 8px;
     box-shadow:0 10px 8px -8px rgba(0, 0, 0, 0.25);
 
 }
 
 .temporary-banner__subtitle a:hover, .temporary-banner__subtitle a:active{
-    background-color: rgba(238, 238, 238,0.5);
+    background-color: #eeeeee80;
     color: rgba(119, 119, 119,0.5);
 }
