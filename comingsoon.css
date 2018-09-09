@@ -1,12 +1,18 @@
 
 html {
-    box-sizing: content-box;
-    height:100%;
+    /* box-sizing: content-box; */
+    height:100vh;
     width:100vw;
     font-size: 1rem;
 }
 
+body::-webkit-scrollbar {
+    width: 0
+}
+
+
 body {
+    height:100vh;
     width:100vw;
     font-family: 'Cherry Swash', cursive;
     color: rgb(255,255,255);
@@ -22,7 +28,7 @@ body {
 .container{
     position: absolute;
     width:100vw;
-    top:20vh;
+    top:15vh;
     left:0;
     border: 2px solid rgba(119, 119, 119, 0.5);
     background-color: rgba(165, 165, 165, 0.5);
@@ -31,24 +37,24 @@ body {
     margin-left:auto; 
     margin-right:auto;
 
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     box-shadow:0 12px 8px -8px rgba(0, 0, 0, 0.25);
 }
 
-table.center {
+/* .center {
     margin-left:auto; 
     margin-right:auto;
-  }
+  } */
 
 #temporary-banner{
     display: block;
-    height: 40%;    
+    height: 40vh;    
 }
 
 .temporary-banner__title {
     font-size: 2rem;
     font-weight: 600;
-    
+    padding-top:1rem;
     margin:auto;
     display: block;
     text-align: center;
@@ -59,22 +65,23 @@ table.center {
 }
 
 .temporary-banner__logo {
-    /* height: 100%;
-    text-align: center; */
-    padding: 32px 0;
+    /* height: 100%; */
+    text-align: center;
+    /* padding: 2rem 0; */
     
     margin-left:auto;
     margin-right: auto;
-    
-    
     display: block;
-    padding-left:50px;
-    width: 50%;
+    
+    width: 30vw;
 }
 
 .temporary-banner__logo img{
-    width: 100%;
+    width: 40vw;
     vertical-align: middle;
+    margin: auto;
+    /* padding-left:1rem; */
+    padding-top:1rem;
 }
 
 .temporary-banner__subtitle {
@@ -84,23 +91,119 @@ table.center {
     margin:auto;
     display: block;
     text-align: center;
+    padding-top:1rem;
     
 }
+.temporary-banner__etsy-button{
+    font-family: 'Poiret One', serif;
+    font-size:1.5rem;
+    font-weight: 600;
+    margin:auto;
+    display: block;
+    text-align: center;
+    padding-top:2rem;
+}
 
-.temporary-banner__subtitle a {
+.temporary-banner__etsy-button a {
     vertical-align: middle;
     text-decoration: none;
     color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 600;
-    padding:12px;
+    padding:1rem;
     background-color: #F56400;
     border-radius: 8px;
     box-shadow:0 10px 8px -8px rgba(0, 0, 0, 0.25);
 
 }
 
-.temporary-banner__subtitle a:hover, .temporary-banner__subtitle a:active{
-    background-color: #eeeeee80;
+
+.temporary-banner__etsy-button a:hover, .temporary-banner__etsy-button a:active{
+    background-color: rgba(238, 238, 238, 0.502);
     color: rgba(119, 119, 119,0.5);
+}
+
+.temporary-banner__contact {
+    font-family: 'Poiret One', serif;
+    padding-top:2rem;
+
+    width: 100vw;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.temporary-banner__contact div{
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    font-size:1.5rem;
+
+}
+
+.temporary-banner__contact a {
+    text-decoration: none;
+    color: white;
+    font-size:1.5rem;
+}
+
+
+.temporary-banner__social {
+    width: 100vw;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    padding:1rem 0;
+
+}
+
+.temporary-banner__social img{
+    width: 4rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.temporary-banner__social img:hover{
+    opacity: 0.5;
+}
+
+.temporary-banner__social a{
+    width: 2rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* .temporary-banner__social-facebook {
+    width: 2rem;
+    height:2rem;
+    display: block;
+    background: url('images/facebook.svg');
+    z-index: 10;
+}
+
+.temporary-banner__social-facebook:hover,
+.temporary-banner__social-facebook:active {
+    background: url('images/facebook-grey.svg');
+}
+
+.temporary-banner__social-facebook {
+    width: 2rem;
+    height:2rem;
+    display: block;
+    background: url('images/instagram.svg');
+    z-index: 10;
+}
+
+.temporary-banner__social-facebook:hover,
+.temporary-banner__social-facebook:active {
+    background: url('images/instagram-grey.svg');
+} */
+
+@media ( min-width: 40rem)
+{
+    .temporary-banner__logo img{
+        width: 30vw;
+        padding-left:2rem;
+
+    }
 }
