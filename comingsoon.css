@@ -28,7 +28,7 @@ body {
 .container{
     position: absolute;
     width:100vw;
-    top:12vh;
+    top:10vh;
     left:0;
     border-top: 2px solid rgba(119, 119, 119, 0.5);
     border-bottom: 2px solid rgba(119, 119, 119, 0.5);
@@ -61,6 +61,17 @@ body {
     text-align: center;
 }
 
+
+.temporary-banner__title2 {
+    font-family: 'Poiret One', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top:1rem;
+    margin:auto;
+    display: block;
+    text-align: center;
+}
+
 .temporary-banner__title > div{
     width:auto;
 }
@@ -74,7 +85,7 @@ body {
     margin-right: auto;
     display: block;
     
-    width: 30vw;
+    width: 35vw;
 }
 
 .temporary-banner__logo img{
@@ -92,7 +103,7 @@ body {
     margin:auto;
     display: block;
     text-align: center;
-    padding-top:1rem;
+    padding:1rem 0;
     
 }
 .temporary-banner__etsy-button{
@@ -102,7 +113,7 @@ body {
     margin:auto;
     display: block;
     text-align: center;
-    padding-top:2rem;
+    padding:3rem 0;
 }
 
 .temporary-banner__etsy-button a {
@@ -111,7 +122,7 @@ body {
     color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 600;
-    padding:1rem;
+    padding:0.8rem;
     background-color: #F56400;
     border-radius: 8px;
     box-shadow:0 10px 8px -8px rgba(0, 0, 0, 0.25);
@@ -202,9 +213,13 @@ body {
 
 @media ( min-width: 40rem)
 {
+    .temporary-banner__logo {       
+        width: 25vw;
+    }
+
     .temporary-banner__logo img{
         width: 30vw;
-        padding-left:2rem;
+        padding-left:0rem;
 
     }
 }
