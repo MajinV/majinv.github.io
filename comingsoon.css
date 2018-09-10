@@ -53,7 +53,7 @@ body {
 }
 
 .temporary-banner__title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     padding-top:1rem;
     margin:auto;
@@ -64,7 +64,7 @@ body {
 
 .temporary-banner__title2 {
     font-family: 'Poiret One', serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
     padding-top:1rem;
     margin:auto;
@@ -98,7 +98,7 @@ body {
 
 .temporary-banner__subtitle {
     font-family: 'Poiret One', serif;
-    font-size:1.5rem;
+    font-size:1.4rem;
     font-weight: 600;
     margin:auto;
     display: block;
@@ -113,7 +113,7 @@ body {
     margin:auto;
     display: block;
     text-align: center;
-    padding:3rem 0;
+    padding:2rem 0;
 }
 
 .temporary-banner__etsy-button a {
@@ -137,7 +137,7 @@ body {
 
 .temporary-banner__contact {
     font-family: 'Poiret One', serif;
-    padding-top:2rem;
+    padding-top:1rem;
 
     width: 100vw;
     margin: auto;
@@ -156,7 +156,7 @@ body {
 .temporary-banner__contact a {
     text-decoration: none;
     color: white;
-    font-size:1.5rem;
+    font-size:1.4rem;
 }
 
 
