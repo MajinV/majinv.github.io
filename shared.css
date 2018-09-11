@@ -23,7 +23,7 @@ body {
 header {
   /* height: 12rem; */
   width: 100%;
-  
+
 }
 
 #main-header {
@@ -48,7 +48,7 @@ header {
 /* #region mobile nav */
 
 .mobile-nav__button {
-  
+
   color: white;
   width: 2rem;
   padding: 0 2rem;
@@ -182,9 +182,9 @@ header {
 main {
   /* position: relative; */
   /* height: 65%; */
-  
+
   width: 100%;
-  
+
   margin: 0;
 }
 
@@ -230,6 +230,26 @@ footer {
   background-color: #535353;
   /* height: 12rem; */
 }
+
+#images-container{
+  width:100%;
+}
+
+.images-container-image{
+  /* padding:1rem 0; */
+  width: 100%;
+  vertical-align: top;
+  margin:0;
+  border:0;
+}
+
+.images-container-image img{
+  padding:2rem 0;
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+}
+
 
 #footer-container {
   width: 80%;
@@ -277,7 +297,7 @@ footer {
   margin: 0;
   padding-bottom: 0.5rem;
   /* text-align: left; */
-  font-size: 1srem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -357,14 +377,17 @@ footer {
     width: 70%;
     padding: 3rem 0;
     margin: auto;
+    text-align: center;
   }
 
   .headline-container__tagline {
     /* float: right; */
     width: 80%;
     display: inline-block;
-    width: 65%;
-    padding-right: 1rem;
+    /* width: 65%; */
+    /* padding-right: 1rem; */
+
+    margin:auto;
   }
 
   .headline-container__tagline > h1 {
@@ -372,23 +395,46 @@ footer {
     font-size: 1.2rem;
     /* padding: 16px 0; */
 
-    text-align: left;
+    /* text-align: left; */
   }
 
   .headline-container__tagline > p {
     /* position: relative; */
-    font-size: 1rem;
-    text-align: left;
+    font-size: 1.2rem;
+    /* text-align: left; */
     margin: 0;
   }
 
   #footer-container {
+    width: 80%;
+    text-align: center;
+    margin:auto;
+  }
+  #images-container{
+    text-align: center;
+
+  }
+  .images-container-image{
+    text-align: center;
+    padding:1rem 1rem;
+    vertical-align: middle;
+    /* padding:1rem 0; */
+    width: 40%;
+    display: inline-block;
+    margin:auto;
+  }
+
+  .images-container-image img{
+    display: inline-block;
+    vertical-align: top;
     width: 100%;
+    height: auto;
+margin:auto;
   }
 
   .main-footer__info {
     width: 100%;
-    padding:1rem;
+    /* padding:1rem; */
   }
 
   .main-footer__info-columns {
@@ -416,6 +462,8 @@ footer {
     margin-left: 1rem;
   }
 }
+
+
 
 .display {
   display: none;
