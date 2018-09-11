@@ -232,13 +232,18 @@ footer {
 }
 
 #images-container{
-  width:100%;
+  width:90%;
+  text-align: center;
+  margin: auto;
+  padding-bottom:3rem;
 }
 
 .images-container-image{
   /* padding:1rem 0; */
   width: 100%;
+  text-align: center;
   vertical-align: top;
+  margin: auto;
   margin:0;
   border:0;
 }
@@ -248,6 +253,7 @@ footer {
   vertical-align: top;
   width: 100%;
   height: auto;
+  margin: auto;
 }
 
 
