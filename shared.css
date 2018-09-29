@@ -32,8 +32,8 @@ header {
   width: 100%;
   background: linear-gradient(
       0deg,
-      rgba(108, 108, 108, 0.5),
-      rgba(108, 108, 108, 0.5)
+      rgba(87, 87, 87, 0.75),
+      rgba(63, 63, 63, 0.9)
     ),
     url(images/main-banner.jpg) left 28% bottom 60% / cover no-repeat border-box;
   background-blend-mode: lighten, normal;
@@ -232,11 +232,20 @@ footer {
 }
 
 #images-container{
-  width:90%;
+  width:100%;
   text-align: center;
   margin: auto;
   padding-bottom:3rem;
+  background-color: rgba(235, 235, 235, 0.397);
 
+}
+
+.images-container-box {
+  /* border:1px solid #cecece; */
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  width: 90%;
+  margin:auto;
+  padding:2rem 0;
 }
 
 
@@ -424,7 +433,7 @@ footer {
 
   .headline-container__tagline > h1 {
     /* position: relative; */
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     /* padding: 16px 0; */
 
     /* text-align: left; */
@@ -453,7 +462,7 @@ padding:2rem;
     /* border:1px solid #cecece; */
     /* background-color: rgba(255, 255, 255, 0.5); */
     border-radius: 16px;
-    width: 80%;
+    width: 50%;
     margin:auto;
     padding:2rem 0;
   }
@@ -461,7 +470,7 @@ padding:2rem;
   
   .images-container-image{
     text-align: center;
-    padding:0.5rem 0.25rem;
+    padding:1rem 1rem;
     margin:1rem 0;
     vertical-align: top;
     vertical-align: middle;

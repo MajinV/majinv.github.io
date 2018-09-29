@@ -26,7 +26,7 @@
     rgba(108, 108, 108, 0.7),
     rgba(108, 108, 108, 0.7)
   ),
-  url('images/spotlight.png')  bottom 50% left 40% / cover no-repeat border-box;
+  url('images/decorations/anenomy-water.png')  bottom 50% left 40% / cover no-repeat border-box;
   background-blend-mode: darken, normal;
   
 }
@@ -73,7 +73,7 @@
 .products__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 2rem 0;
   text-align: center;
 }
 
@@ -88,7 +88,8 @@
   vertical-align: middle;
   text-align: center;
   margin:auto;
-  padding: 0 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom:1rem;
 }
 
 .product__info-shape {
@@ -140,9 +141,11 @@
 
   .product {
     display: inline-block;
+    padding:0;
   }
   .product__info-shape {
     display: inline-block;
+    padding:0;
   }
 
 }
