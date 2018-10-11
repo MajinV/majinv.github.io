@@ -2,14 +2,29 @@
 <html>
 
 <head>
-    
+    <script type="text/javascript" src="scripts/cookie-consent-pp.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            cookieconsent.run({ "notice_banner_type": "headline", "consent_type": "opt-out", "palette": "light", "website_name": "Eternal Posy", "cookies_policy_url": "https://www.eternalposy.co.uk/privacy", "change_settings_element": "#changeOptions" });
+        });
+    </script>
+    <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-126554152-1"></script>
+    <script type="text/plain" cookie-consent="tracking">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-126554152-1');
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Handmade hair pieces and wedding accessories | Eternal Posy</title>
+    <title>Handmade Wedding Decorations and Accessories | Eternal Posy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="accessories.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../shared.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="shared.css" />
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Cherry+Swash|Forum|Laila|Poiret+One" rel="stylesheet">
+
+
+
 </head>
 
 <body>
@@ -17,28 +32,28 @@
         <section id="main-header">
             <div class="mobile-nav">
                 <div class="mobile-nav__button">
-                    <img src="../images/md-menu.svg">
+                    <img src="images/md-menu.svg">
                 </div>
                 <div class="mobile-nav__menu-holder display">
                     <div class="mobile-nav__button--close">
-                        <img src="../images/md-close.svg">
+                        <img src="images/md-close.svg">
                     </div>
                     <div class="mobile-nav__menu">
 
                         <ul class="mobile-nav__links">
                             <li class="mobile-nav__link__brand">
                                 <a href="index.html">
-                                    <img src="../images/logo-grey.png" alt="Eternal Posy">
+                                    <img src="images/logo-grey.png" alt="Eternal Posy">
                                 </a>
                             </li>
                             <li class="mobile-nav__link">
-                                <a href="../decorations/index.html">Decorations</a>
+                                <a href="decorations/index.html">Decorations</a>
                             </li>
                             <li class="mobile-nav__link">
-                                <a href="../favours/index.html">Favours</a>
+                                <a href="favours/index.html">Favours</a>
                             </li>
                             <li class="mobile-nav__link">
-                                <a href="index.html">Accessories</a>
+                                <a href="accessories/index.html">Accessories</a>
                             </li>
                             <li class="mobile-nav__link">
                                 <a href="https://www.etsy.com/shop/eternalposy">Shop</a>
@@ -51,28 +66,28 @@
             <nav class="nav">
                 <ul class="nav__links">
                     <li class="nav__link">
-                        <a href="../decorations/index.html">Decorations</a>
+                        <a href="decorations/index.html">Decorations</a>
                     </li>
                     <li class="nav__link">
-                        <a href="../favours/index.html">Favours</a>
+                        <a href="favours/index.html">Favours</a>
                     </li>
                 </ul>
                 <div class="main-header__brand-container">
                     <div class="main-header__brand">
-                        <a href="../index.html">
-                            <img src="../images/logo.png" alt="Eternal Posy">
+                        <a href="index.html">
+                            <img src="images/logo-grey.png" alt="EternalPosy">
                         </a>
                     </div>
                     <h1 class="nav__header">
-                        <a href="../index.html">Eternal Posy</a>
+                        <a href="index.html">Eternal Posy</a>
                     </h1>
                 </div>
                 <ul class="nav__links">
                     <li class="nav__link">
-                        <a href="index.html">Accessories</a>
+                        <a href="accessories/index.html">Accessories</a>
                     </li>
                     <li class="nav__link">
-                        <a href="https://www.etsy.com/shop/eternalposy">Etsy</a>
+                        <a href="https://www.etsy.com/shop/eternalposy" target="blank">Etsy</a>
                     </li>
                 </ul>
 
@@ -82,36 +97,60 @@
     <main>
         <section id="headline-container">
             <div class="headline-container__tagline">
-                <h1>Lovingly crafted hair pieces and accessories</h1>
-                <p>Stand out of your special day with one of my handmade hairpieces or even suprise the groom with a
-                    buttonhole
-                    that will last the day!</p>
+                <h1>Make your special day eternal with keepsakes that will last forever</h1>
+                <p>I create beautiful handmade wedding decorations that are designed to impress but also to provide you
+                    with
+                    a lasting memento for your wonderful day</p>
             </div>
+            <!-- <div class="headline-container__spotlight">
+                <img src="images/spotlight.png">
+            </div> -->
         </section>
-        <section id="images-container">
-            <div class="images-container-box">
-                <div class="images-container-image">
-                    <img src="../images/accessories/3-hair-pins.png" />
+        <section id="etsy-container">
+            <div class="etsy">
+                <div class="etsy__logo">
+                    <img src="" alt="" />
                 </div>
-                <div class="images-container-image">
-                    <img src="../images/accessories/hair-comb.png" />
+                <div class="etsy__shop-desc">
+                    <p>
+                        When planning my own wedding, finding the perfect favours & centrepieces proved tricky. In the
+                        end I decided to make my own.
+                    </p>
+                    <p>
+                        Inspired by my experience I have created a collection of unique, beautiful favours &
+                        decorations for others looking for something
+                        special.
+                    </p>
                 </div>
-                <div class="images-container-image">
-                    <img src="../images/accessories/hair-pin.png" />
-                </div>
-                <div class="images-container-image">
-                    <img src="../images/accessories/hair-vine.png" />
+                <div class="etsy__shop-button">
+                    <a href="https://www.etsy.com/shop/eternalposy" target="_blank"><img class="etsy__logo" src="images/etsy.svg">Find
+                        me on Etsy</a>
                 </div>
             </div>
-            <div class="etsy__shop-button">
-                <a href="https://www.etsy.com/shop/eternalposy" target="_blank"><img class="etsy__logo" src="../images/etsy.svg">Find
-                    me on Etsy</a>
-            </div>
+
         </section>
-        <section id="seasons-container">
-            <div class="seasons-container_info-shape"></div>
-            <div class="seasons-container_info-shape"></div>
-            <div class="seasons-container_info-shape"></div>
+        <section id="products-container">
+            <h1 class="section-title">Explore my creations and discover something you love</h1>
+            <ul class="products__list">
+                <li class="product">
+                    <div class="product__info-shape">
+                        <a href="favours/index.html"><img src="images/favor-icon.png"></a>
+                    </div>
+                    <p class="product__info-description">Wedding Favours</p>
+                </li>
+                <li class="product">
+                    <div class="product__info-shape--focus">
+                        <a href="decorations/index.html"><img src="images/centre-icon.png"></a>
+                    </div>
+                    <p class="product__info-description">Table Decorations</p>
+                </li>
+                <li class="product">
+                    <div class="product__info-shape">
+                        <a href="accessories/index.html"><img src="images/acc-icon.png"></a>
+                    </div>
+                    <p class="product__info-description">Accessories</p>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
@@ -123,16 +162,16 @@
                         <ul class="main-footer__info-column__links">
 
                             <li class="info-column__link">
-                                <a href="../index.html">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li class="info-column__link">
-                                <a href="../decorations/index.html">Decorations</a>
+                                <a href="decorations/index.html">Decorations</a>
                             </li>
                             <li class="info-column__link">
-                                <a href="../favours/index.html">Favours</a>
+                                <a href="favours/index.html">Favours</a>
                             </li>
                             <li class="info-column__link">
-                                <a href="index.html">Accessories</a>
+                                <a href="accessories/index.html">Accessories</a>
                             </li>
                         </ul>
                     </li>
@@ -140,15 +179,15 @@
                         <div class="main-footer__info-column__title">Social Media</div>
                         <ul class="main-footer__info-column__links">
                             <li class="info-column__link">
-                                <img src="../images/facebook.svg">
+                                <img src="images/facebook.svg">
                                 <a href="https://facebook.co/eternalposy" target="_blank">Facebook</a>
                             </li>
                             <li class="info-column__link">
-                                <img src="../images/instagram.svg">
+                                <img src="images/instagram.svg">
                                 <a href="https://instagram.com/eternalposy" target="_blank">Instagram</a>
                             </li>
                             <li class="info-column__link">
-                                <img src="../images/twitter.svg">
+                                <img src="images/twitter.svg">
                                 <a href="https://twitter.com/eternalposy" target="_blank">Twitter</a>
                             </li>
                             <li class="info-column__link"></li>
@@ -158,7 +197,7 @@
                         <div class="main-footer__info-column__title">About</div>
                         <ul class="main-footer__info-column__links">
                             <li class="info-column__link">
-                                <a href="../privacy/index.html">Privacy Policy</a>
+                                <a href="privacy/index.html">Privacy Policy</a>
                             </li>
                             <li id="changeOptions" class="info-column__link">Privacy Options</li>
                             <li class="info-column__link">
@@ -178,20 +217,7 @@
             </div>
         </section>
     </footer>
-    <script src="../scripts/shared.js"></script>
-    <script type="text/javascript" src="../scripts/cookie-consent-pp.min.js"></script>
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            cookieconsent.run({ "notice_banner_type": "headline", "consent_type": "opt-out", "palette": "light", "website_name": "Eternal Posy", "cookies_policy_url": "https://www.eternalposy.co.uk/privacy", "change_settings_element": "#changeOptions" });
-        });
-    </script>
-    <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-126554152-1"></script>
-    <script type="text/plain" cookie-consent="tracking">
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-126554152-1');
-    </script>
+    <script src="scripts/shared.js"></script>
 </body>
 
 </html>

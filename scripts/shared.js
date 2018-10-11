@@ -14,3 +14,4 @@ mobileNavButtonClose.addEventListener('click', function(){
     mobileNavButton.classList.remove('display');
     mobileNavMenu.classList.add('display');
 });
+
