@@ -1,0 +1,53 @@
+
+.about-container {
+    width:100%;
+    height: auto;
+}
+
+.about-container__content {
+    padding: 3rem 0;
+    width:100%;
+    text-align: center;
+}
+
+.about-container__content-image {
+    width:100%;
+}
+
+.about-container__content-image >img {
+    border-radius: 50%;
+    width: 60vw;
+    margin:auto;
+    border:solid 4px #66717E;
+}
+
+
+.about-container__content-bio-text {
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    line-height: 150%;
+}
+
+.contact-container__title {
+    text-align: center;
+}
+
+.contact-container__methods {
+    width:100%;
+    text-align: center;
+    padding-bottom: 3rem;
+
+}
+
+.contact-container__method {
+    padding-bottom: 1rem;
+}
+
+.contact-container__method-type {
+    font-weight: 600;
+}
+
+.contact-container__method-value {
+
+}

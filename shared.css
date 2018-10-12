@@ -29,17 +29,21 @@ header {
   width: 100%;
 }
 
+main {
+  background-color: hsla(64, 26%, 78%, 0.05);
+}
+
 #main-header {
   font-family: "Cherry Swash", cursive;
   height: 100%;
   width: 100%;
   background: linear-gradient(
       0deg,
-      rgba(87, 87, 87, 0.75),
-      rgba(63, 63, 63, 0.9)
+      rgba(87, 87, 87, 0.2),
+      rgba(63, 63, 63, 0.1)
     ),
-    url(images/main-banner.jpg) left 28% bottom 88% / cover no-repeat border-box;
-  background-blend-mode: lighten, normal;
+    url(images/main-banner.jpg) left 28% bottom 86% / cover no-repeat border-box;
+  /* background-blend-mode: lighten, normal; */
   margin: auto;
   color: rgb(255, 255, 255);
   filter: grayscale(20%);
@@ -135,12 +139,12 @@ header {
 
 .nav__header a {
   text-decoration: none;
-  color:#3e3e3e;
+  color:#FFF;
 }
 
 .nav__header a:hover,
 .nav__header a:active {
-  color: rgb(241, 240, 202);
+  color: #D4D6B9;
 }
 
 .nav__links {
@@ -167,12 +171,12 @@ header {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #3e3e3e;
+  color: #FFF;
 }
 
 .nav__link a:hover,
 .nav__link a:active {
-  color: rgb(241, 240, 202);
+  color: #D4D6B9;
 }
 
 .main-header__brand {
@@ -208,6 +212,7 @@ main {
   color: #444444;
   margin: auto;
   padding-top: 2rem;
+  
 }
 
 .headline-container__tagline {
@@ -241,12 +246,13 @@ main {
 
 
 footer {
+  border-top: solid 4px #66717E;
   font-family: "Poiret One", cursive;
   font-size: 0.9rem;
   margin: auto;
   width: 100%;
   vertical-align: middle;
-  background-color: #535353;
+  background-color: #383B53;
   padding: 1rem 0;
   /* height: 12rem; */
 }
@@ -256,7 +262,7 @@ footer {
   text-align: center;
   margin: auto;
   padding-bottom: 3rem;
-  background-color: rgba(235, 235, 235, 0.397);
+  background-color: rgba(212, 214, 185, 0.2);
 }
 
 .images-container-box {
@@ -305,7 +311,8 @@ footer {
   text-align: center;
   box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49);
   background-color: #f56400;
-  margin: 2rem auto;
+  margin: auto;
+  margin-bottom:1rem;
   border-radius: 8px;
 }
 
@@ -316,6 +323,9 @@ footer {
   font-weight: 600;
   font-size: 1.2rem;
 }
+
+
+
 
 
 
@@ -406,7 +416,7 @@ footer {
 
 /* #region @media */
 
-@media (min-width: 51rem) {
+@media (min-width: 57rem) {
   #main-header {
     padding-top: 0;
     padding-bottom: 0;
@@ -433,11 +443,12 @@ footer {
   .nav__header {
     font-size: 1.5rem;
     margin: 0 0;
-    padding:0;
+    padding:0 2rem;
   }
 
   .main-header__brand {
     padding: 0;
+    padding-bottom: 0.5rem;
   }
 
   .nav__links {

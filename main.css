@@ -26,30 +26,72 @@
     rgba(108, 108, 108, 0.7),
     rgba(108, 108, 108, 0.7)
   ),
-  url('images/decorations/anenomy-water.png')  bottom 50% left 40% / cover no-repeat border-box;
+  url('images/decorations/anenomy-water-blur.png')  bottom 50% left 40% / cover no-repeat border-box;
   background-blend-mode: darken, normal;
+  padding:2rem 0;
+  margin:auto;
   
 }
 
 .etsy {
-  width:80%;
-  padding: 1rem 0;
+  width:100%;
   margin:auto;
+  text-align: center;
 }
 
 
 
 .etsy__shop-desc {
-  width: 100%;
+  width: 80%;
   text-align: center;
   font-size: 1.2rem;
-  /* font-weight: 600; */
+  font-weight: 600;
+  line-height: 150%;
+  margin:auto;
+  padding: 1rem 0;
 }
 
-.etsy__shop-desc span {
-  width: 100%;
+.contact__cta {
+  width: 80%;
+  margin:auto;
+  display: inline-block;
+  padding-top: 1rem;
 }
 
+.contact__cta-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.contact__button {
+  width:11rem;
+  display: inline-block;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49);
+  background-color: #3B0C13;
+  margin: auto;
+  border:solid 2px rgba(212, 214, 185, 0.527);
+  border-radius: 8px;
+}
+
+.contact__button a {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+ 
+}
+
+.contact__button:hover, 
+.contact__button:active{
+  background-color: #D4D6B9;
+  border:solid 2px #66717E;
+}
 
 
 #products-container {
@@ -95,18 +137,20 @@
 .product__info-shape {
   width: 132px;
   height: 132px;
-  background-color: rgb(190, 190, 190);
+  background-color: #66717E;
   border-radius: 50%;
-  padding: 2px;
+  
   margin:auto;
   text-align: center;
   box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49);
+  align-content: center;
+  align-items: center;
 }
 
 .product__info-shape--focus {
   width: 180px;
   height: 180px;
-  background-color: rgb(190, 190, 190);
+  background-color: #66717E;
   border-radius: 50%;
   padding: 2px;
   margin:auto;
@@ -115,10 +159,10 @@
 }
 
 .product__info-shape img {
-  max-width: 132px;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 50%;
-  margin: auto;
-  text-align: center;
+
 }
 
 .product__info-shape--focus img {
@@ -135,7 +179,7 @@
 }
 
 
-@media (min-width: 51rem) {
+@media (min-width: 57rem) {
 
   .headline-container__spotlight {
     width:30%;
@@ -149,7 +193,57 @@
   }
 
   .etsy {
-    width: 70%;
+    width:80%;
+    margin:auto;
+    text-align: center;
+  }
+  
+  
+  
+  .etsy__shop-desc {
+    width: 80%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 150%;
+    margin:auto;
+    padding: 1rem 0;
+  }
+  
+  .contact__cta {
+    width: 80%;
+    margin:auto;
+    display: inline-block;
+    padding-top: 2rem;
+  }
+  
+  .contact__cta-text {
+    padding-right: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+  
+  .contact__button {
+    width:11rem;
+    display: inline-block;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49);
+    background-color: #3B0C13;
+    margin: auto;
+    border:solid 2px rgba(212, 214, 185, 0.527);
+    border-radius: 8px;
+  }
+  
+  .contact__button a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+   
   }
 
   #products-container {
