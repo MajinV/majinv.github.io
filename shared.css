@@ -37,15 +37,14 @@ main {
   font-family: "Cherry Swash", cursive;
   height: 100%;
   width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
       0deg,
       rgba(87, 87, 87, 0.2),
       rgba(63, 63, 63, 0.1)
     ),
-    url(images/main-banner.jpg) left 28% bottom 86% / cover no-repeat border-box;
+    url(images/main-banner.jpg) left 28% bottom 86% / cover no-repeat border-box; */
   /* background-blend-mode: lighten, normal; */
   margin: auto;
-  color: rgb(255, 255, 255);
   filter: grayscale(20%);
   z-index: 1;
   padding-top: 2rem;
@@ -56,7 +55,7 @@ main {
 /* #region mobile nav */
 
 .mobile-nav__button {
-  color: white;
+  color: #383B53;
   width: 2rem;
   padding: 0 2rem;
   cursor: pointer;
@@ -139,12 +138,12 @@ main {
 
 .nav__header a {
   text-decoration: none;
-  color:#FFF;
+  color: #383B53;
 }
 
 .nav__header a:hover,
 .nav__header a:active {
-  color: #D4D6B9;
+  color:  #383B53;;
 }
 
 .nav__links {
@@ -171,7 +170,7 @@ main {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #FFF;
+  color: #383B53;;
 }
 
 .nav__link a:hover,

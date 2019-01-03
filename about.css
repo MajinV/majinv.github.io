@@ -88,6 +88,12 @@
     /* text-align: center; */
   }
 
+.contact-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:2rem;
+}
 
 .contact-container__title {
     text-align: center;
@@ -96,20 +102,23 @@
 .contact-container__methods {
     width:100%;
     text-align: center;
-    padding-bottom: 3rem;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-container__method {
     padding-bottom: 1rem;
+    display: flex;
 }
 
 .contact-container__method-type {
     font-weight: 600;
+    margin-right: 0.2rem;
 }
 
 .contact-container__method-value {
-
+    
 }
 
 @media (min-width: 57rem) {
