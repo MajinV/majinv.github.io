@@ -1,7 +1,10 @@
 
-.about-container {
+#about-container {
     width:100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-container__content {
@@ -40,4 +43,9 @@
         width: 20rem;
     }
 
+    .about-container__content {
+
+        width:50%;
+
+    }
 }

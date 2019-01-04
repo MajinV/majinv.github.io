@@ -556,6 +556,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   font-family: 'Istok Web', sans-serif;
+  line-height: 150%;
 }
 
 .container__content-text p {
