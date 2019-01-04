@@ -499,7 +499,8 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem;
   align-items: stretch;
   padding-top: 1rem;
@@ -536,6 +537,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 
@@ -557,6 +559,7 @@ footer {
   justify-content: center;
   font-family: 'Istok Web', sans-serif;
   line-height: 150%;
+  text-align: left;
 }
 
 .container__content-text p {
@@ -716,8 +719,8 @@ footer {
   }
 
   .gallery {
-    width: 90%;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 1rem;
     padding-top: 0rem;
   }

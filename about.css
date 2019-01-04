@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding:2rem 2.5rem 2rem 2.5rem;
 }
 
 .about-container__content {
@@ -14,13 +15,12 @@
 }
 
 .about-container__content-image {
-    width:100%;
+    /* width:100%; */
 }
 
 .about-container__content-image >img {
     border-radius: 50%;
-    width: 60vw;
-    margin:auto;
+    width: 15rem;
     border:solid 4px #66717E;
 }
 
@@ -28,7 +28,6 @@
 .about-container__content-bio-text {
     text-align: justify;
     width: 90%;
-    margin: auto;
     line-height: 150%;
 }
 
@@ -40,10 +39,10 @@
 
 @media (min-width: 57rem) {
     .about-container__content-image >img {
-        width: 20rem;
+        width: 15rem;
     }
 
-    .about-container__content {
+    .container__content {
 
         width:50%;
 
