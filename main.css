@@ -1,157 +1,252 @@
-html {
-  box-sizing: border-box;
-  height: 100%;
+
+.headline-container__spotlight {
+  width:100%;
+  height: auto;
+  vertical-align: middle;
+  /* padding-top: 16px; */
+  margin:auto;
+  padding-top: 1rem;
+  padding-bottom: 0;
 }
 
-body {
-  font-family: 'Cherry Swash', cursive;;
-  font-size: 1rem;
-  margin: 0;
-  height:100%;
+.headline-container__spotlight img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: top;
+  /* border-radius: 8px; */
 }
 
-.main-header {
-  /* position: fixed; */
-  /* top: 0;
-  left: 0; */
+#hero-container {
+  /* font-family: 'Poiret One', cursive; */
   width: 100%;
-  z-index: 1;
-}
-
-.main-header__brand {
-    position: absolute;
-  height: 80px;
-  vertical-align: middle;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  right:16px;
-  
-}
-
-.main-header__brand img {
-  height: 100%;
-}
-
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-
-.nav {
-  width: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  height: 320px;
+  background-color: #b6b6b6;
+  color:white;
   background: linear-gradient(
-      0deg,
-      rgba(108, 108, 108, 0.5),
-      rgba(108, 108, 108, 0.5)
-    ),
-    url(images/main-banner.png) left 0% bottom 60%/cover no-repeat border-box;
-  background-blend-mode: lighten, normal;
-  margin: auto;
-  color: rgb(255, 255, 255);
-}
-
-.nav__header {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 1.8rem;
-  padding: 0 50px;
+    0deg,
+    rgba(108, 108, 108, 0.7),
+    rgba(108, 108, 108, 0.7)
+  ),
+  url('images/decorations/anenomy-water-blur.jpg')  bottom 50% left 40% / cover no-repeat border-box;
+  background-blend-mode: darken, normal;
+  padding:2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
 }
 
-.nav__links {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: inline-block;
-  vertical-align: middle;
+.hero {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav__link {
-  display: inline-block;
-  margin: 0 16px;
+.hero__logo {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-left: 10vw; */
 }
 
-.nav__link a {
-  text-decoration: none;
-  font-size: 1.8rem;
+.hero__logo img {
+  width: 40vw;
+}
+
+  
+.hero__headline {
+  font-size:1.5rem;
+  text-align: center;
+  margin:0 2rem;
+}
+
+.hero__shop-desc {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(255, 255, 255);
+  line-height: 150%;  
+  margin:0 1rem;
 }
 
-.nav__link a:hover,
-.nav__link a:active {
-  color: rgb(158, 158, 158);
-}
-
-main{
-    position: relative;
-    height: 40%;
-}
-
-#site-banner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  /* top:360px; */
-  color: #444444;
-  /* border: dashed gray 1px; */
-}
-
-#site-banner > h1 {
-    position: absolute;
-    top: 4%;
-    left: 60%;
-    font-size: 1.2rem;
-    padding-bottom: 16px;
-}
-
-#site-banner > p {
-    position: relative;
-    top: 16%;
-    left: 60%;
-    font-size: 1.0rem;
-    width: 30%;
-}
-
-footer{
-    position: relative;
-}
-.main-footer {
-  height: 200px;
-  background-color: #b4b4b4;
-  position: relative;
+.hero__shop-desc div {
+  padding-bottom: 1rem;
 }
 
 
-.main-footer__info-columns {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: inline-block;
-    vertical-align: middle;
+
+
+#products-container {
+  /* font-family: 'Poiret One', cursive; */
+  /* height: 300px; */
+  width: 80%;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+#products-container h1 {
+  width:100%;
+  /* padding: 2rem; */
+  /* margin: auto; */
+  text-align: center;
+}
+
+.products__list {
+  list-style: none;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* .products__list ul {
+  -webkit-margin-start: 0;
+  -webkit-margin-after:0;
+  -webkit-padding-start: 0px;
+} */
+
+.product {
+  width: 16rem;
+  vertical-align: middle;
+  text-align: center;
+  margin:auto;
+  padding-top: 0.5rem;
+  padding-bottom:1rem;
+}
+
+.product__info-shape {
+  width: 132px;
+  height: 132px;
+  background-color: #66717E;
+  border-radius: 50%;
+  
+  margin:auto;
+  text-align: center;
+  box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49);
+  align-content: center;
+  align-items: center;
+}
+
+.product__info-shape--focus {
+  width: 180px;
+  height: 180px;
+  background-color: #66717E;
+  border-radius: 50%;
+  padding: 2px;
+  margin:auto;
+  text-align: center;
+  box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49);
+}
+
+.product__info-shape img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+
+}
+
+.product__info-shape--focus img {
+  max-width: 180px;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.product__info-description {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+@media (min-width: 57rem) {
+
+  .headline-container__spotlight {
+    width:30%;
+    height: 80%;
+    display: inline-block;     
   }
   
- .main-footer__info-column{
-    display: inline-block;
-    vertical-align: middle;
-    
- } 
-  .info-column__link {
-    list-style-type: none;
-    margin: 0 16px;
+  .headline-container__spotlight img {
+    border-radius: 4px;
+    box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49);
+  }
+
+  .hero {
+    width:80%;
+  }
+
+  .hero__logo {
+    display: none;
   }
   
-  .info-column__link a {
+  .hero__headline {
+    font-size:1.5rem;
+    text-align: center;
+    margin:0 2rem;
+  }
+  
+  .hero__shop-desc {
+    width: 60%;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 1rem 0;
+  }
+  
+  .contact__cta {
+    width: 80%;
+    margin:auto;
+    display: inline-block;
+    padding-top: 2rem;
+  }
+  
+  .contact__cta-text {
+    padding-right: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+  
+  .contact__button {
+    width:14rem;
+    border-radius: 8px;
+  }
+  
+  .contact__button a {
+    text-align: center;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.4rem;
+   
   }
-  
 
+  #products-container {
+    /* height: 300px; */
+    width: 80%;
+  }
 
+  .product {
+    display: inline-block;
+    padding:0;
+  }
+  .product__info-shape {
+    display: inline-block;
+    padding:0;
+  }
+
+  .product__info-shape--focus {
+    display: inline-block;
+    padding:0;
+  }
+
+}
 /* Rectangle 3 */

@@ -1,0 +1,67 @@
+
+#consult-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 2.5rem 2rem 2.5rem;
+    background-color: rgba(56, 59, 83, 0.90);
+    color: white;
+}
+
+
+#process-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 2.5rem 2rem 2.5rem;
+    
+}
+
+#faqs-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 2.5rem 2rem 2.5rem;
+    background-color: rgba(212, 214, 185, 0.2);
+}
+
+.contact-container__title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contact-container__methods {
+    width:100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.contact-container__method {
+    padding-bottom: 1rem;
+    display: flex;
+}
+
+.contact-container__method-type {
+    font-weight: 600;
+    margin-right: 0.2rem;
+}
+
+.contact-container__method-value a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+@media (min-width: 57rem) {
+    .contact-container__title {
+        font-size: 1.7rem;
+    }
+    
+    .contact-container__methods {
+        font-size: 1.5rem;
+    }
+
+}
