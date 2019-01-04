@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cherry+Swash:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One:400,700');
+
 html {
   box-sizing: border-box;
   font-size: 1.1rem;
@@ -7,7 +11,7 @@ html {
 
 body {
   font-family: "Poiret One", cursive;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #4b4b4b;
   margin: 0;
   width: 100%;
@@ -107,6 +111,9 @@ main {
 .mobile-nav__links {
   margin: 0;
   padding: 0;
+  /* display: flex;
+  flex-direction: column;
+  align-items:center; */
 }
 
 .mobile-nav__link {
@@ -126,6 +133,7 @@ main {
   text-align: center;
   margin: auto;
   padding-bottom: 3rem;
+  color: white;
 }
 
 .mobile-nav__link__brand img {
@@ -141,7 +149,7 @@ main {
   /* vertical-align: middle; */
   /* margin: auto; */
   text-align: center;
-  padding:0.5rem;
+  padding:0.8rem;
 }
 
 .nav__header {
@@ -197,6 +205,7 @@ main {
   width: 1.8rem;
   height: 1.8rem;
   filter: none;
+  text-decoration: none;
 }
 
 .main-header__brand img {
@@ -207,11 +216,6 @@ main {
 
 /* #region default / mobile */
 main {
-  /* position: relative; */
-  /* height: 65%; */
-
-  width: 100%;
-
   margin: 0;
 }
 
@@ -226,7 +230,7 @@ main {
 
 .headline-container__tagline {
   /* float: right; */
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   width: 90%;
   margin: auto;
   vertical-align: middle;
@@ -246,11 +250,84 @@ main {
   /* font-size: 1rem; */
   text-align: center;
   margin: 0;
+  font-weight: 400;
+  font-family: 'Istok Web', sans-serif;
+}
+
+.cta-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.contact__cta {
+  width: 80%;
+  margin:auto;
+  display: flex;
+  padding-top: 1rem;
+}
+
+.contact__cta-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.contact__button {
+  width:14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  text-align: center;
+  /* box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49); */
+  /* background-color: #3B0C13; */
+  margin: auto;
+  border:solid 2px rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+}
+
+.contact__button a {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.contact__button:hover, 
+.contact__button:active{
+  background-color: #D4D6B9;
+  border:solid 2px #66717E;
+}
+
+.contact__button--product {
+  box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49); 
+  background-color: #3B0C13;
+  margin-bottom: 2rem;
+}
+
+.contact__button--etsy {
+  box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.49); 
+  background-color: #f56400;
+  margin-bottom: 2rem;
 }
 
 .privacy-container {
   width: 80%;
   margin: auto;
+}
+
+
+
+.privacy-container p, .privacy-container li {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 400;
+  font-size:1rem;
 }
 
 footer {
@@ -270,6 +347,7 @@ footer {
   text-align: center;
   margin: auto;
   padding-bottom: 3rem;
+  padding-top:1rem;
   background-color: rgba(212, 214, 185, 0.2);
 }
 
@@ -424,7 +502,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 0.5rem;
   align-items: stretch;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .gallery img {
@@ -435,6 +513,127 @@ footer {
   border: 0.25px solid #ccc;
 }
 
+.container {
+  margin: 0 0;
+}
+
+.container__content {
+  width:100%;
+}
+
+.container__content h2 {
+  font-size: 1.9rem;
+  margin:0.5rem 0;
+}
+
+.container__content h3 {
+  font-size: 1.6rem;
+  margin:0.3rem 0;
+}
+
+.container__content-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.container__content-title {
+  text-align: center;
+}
+
+
+
+
+.container__content-subtitle {
+  margin-top:1.5rem;
+}
+.container__content-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Istok Web', sans-serif;
+}
+
+.container__content-text p {
+  font-size: 1rem;
+  margin:0.5rem 0;
+  
+}
+
+.container__content-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__content-img img {
+  width:90%;
+}
+
+
+
+#social-container {
+  background-color: rgba(202, 98, 1, 0.2);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+
+.social-container__content{
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+
+.social-container__content ul {
+  margin: auto;
+  padding: 0;
+  /* margin-top: 0.5rem; */
+  width: 100%;
+  display: inline-block;
+}
+
+.social-container__content-columns {
+  list-style-type: none;
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.social-container__content-column {
+  width: 100%;
+  vertical-align: middle;
+  margin: auto;
+  display: inline-block;
+}
+
+
+.social-container__content-column__link {
+  list-style-type: none;
+
+  display: inline-block;
+  /* text-align: center; */
+}
+.social-container__content-column__link img {
+  vertical-align: middle;
+  width: 5rem;
+}
+
+.social-container__content-column__link a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+  /* text-align: center; */
+}
 /* #region @media */
 
 @media (min-width: 57rem) {
@@ -491,7 +690,7 @@ footer {
 
   #headline-container {
     width: 70%;
-    padding: 4rem 0;
+    padding: 2rem 0;
     margin: auto;
     text-align: center;
   }
@@ -507,25 +706,27 @@ footer {
   }
 
   .headline-container__tagline > h1 {
-    /* position: relative; */
-    font-size: 1.4rem;
-    /* padding: 16px 0; */
-
-    /* text-align: left; */
+    font-size: 1.9rem;
   }
 
   .headline-container__tagline > p {
-    /* position: relative; */
-    font-size: 1.2rem;
-    /* text-align: left; */
+    font-size: 1.1rem;
     margin: 0;
   }
 
   .gallery {
     width: 90%;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     grid-gap: 1rem;
-    padding-top: 3rem;
+    padding-top: 0rem;
+  }
+
+  .container__content {
+    width:50%;
+  }
+
+  .container__content-title--gallery {
+    padding-bottom:1rem;
   }
 
   #footer-container {
@@ -539,7 +740,10 @@ footer {
     align-items: center;
     background-color: rgba(235, 235, 235, 0.397);
     width: 100%;
+    padding-top:1rem;
   }
+
+
 
   .images-container-box {
     /* border:1px solid #cecece; */
