@@ -499,8 +499,8 @@ footer {
 
 .gallery {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  /* grid-template-columns: repeat(3, 1fr); */
   grid-gap: 0.5rem;
   align-items: stretch;
   padding-top: 1rem;
@@ -720,7 +720,7 @@ footer {
 
   .gallery {
     width: 80%;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     padding-top: 0rem;
   }
