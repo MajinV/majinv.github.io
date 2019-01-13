@@ -462,6 +462,7 @@ footer {
   list-style-type: none;
   vertical-align: middle;
   height: 2rem;
+  padding:0.2rem 0;
   /* text-align: center; */
 }
 .info-column__link img {
