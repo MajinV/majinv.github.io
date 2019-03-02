@@ -252,6 +252,7 @@ main {
   margin: 0;
   font-weight: 400;
   font-family: 'Istok Web', sans-serif;
+  padding-bottom: 1rem;
 }
 
 .cta-container {
@@ -580,7 +581,13 @@ footer {
   width:90%;
 }
 
-
+.container__content-hrule {
+  height: 0.1rem;
+  width:90%;
+  border-top:solid 0.25px hsla(0, 0%, 0%, 0.75);
+  margin-top:0.7rem;
+  padding-bottom:0.8rem;
+}
 
 #social-container {
   background-color: rgba(202, 98, 1, 0.2);
