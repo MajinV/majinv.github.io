@@ -163,7 +163,7 @@
           <h2>Centrepieces Gallery</h2>
         </div>
         <div class="gallery">
-          <div class="gallery__item">
+          <div class="gallery__item" onclick="openModal();currentSlide(1)">
             <img
               src="../images/decorations/eternal-posy-centrepiece-1.jpg"
               alt="White Dahlia in Vintage Jug | Table Centrepieces"
@@ -292,24 +292,41 @@
           </div>
         </div>
       </section>
-      <div class="gallery-modal hidden">
+      <div id="modal" class="gallery-modal hidden">
         <div class="gallery-modal__background">
-                <div class="gallery-modal__header">
-                    <div class="gallery-modal__close">Close</div>
-                </div>
-          
+          <div class="gallery-modal__header">
+            <div class="gallery-modal__close" onclick="closeModal()">
+              &times;
+            </div>
+          </div>
+
           <div class="gallery-modal__container">
             <div class="gallery-modal__image-container">
-              <img
+              <img class="gallery-modal__image"
                 src="../images/decorations/eternal-posy-centrepiece-1.jpg"
                 alt="White Dahlia in Vintage Jug | Table Centrepieces"
               />
             </div>
+            
 
             <div class="gallery-modal__info-container">
-              <div class="gallery-modal__info-desc">
-                White Dahlia in Vintage Jug
-              </div>
+              <div class="gallery-modal__info-desc"></div>
+              <a class="gallery-modal__info-link" href="../contact.html"
+                >Contact Joanna for more info</a
+              >
+            </div>
+          </div>
+          <div class="gallery-modal__container">
+            <div class="gallery-modal__image-container">
+                    <img class="gallery-modal__image"
+                    src="../images/decorations/eternal-posy-centrepiece-2.jpg"
+                    alt="Grand Candle Trio | Table Centrepieces"
+                  />
+            </div>
+            
+
+            <div class="gallery-modal__info-container">
+              <div class="gallery-modal__info-desc"></div>
               <a class="gallery-modal__info-link" href="../contact.html"
                 >Contact Joanna for more info</a
               >
