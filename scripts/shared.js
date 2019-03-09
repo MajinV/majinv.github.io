@@ -12,3 +12,14 @@ mobileNavButtonClose.addEventListener('click', function(){
     mobileNavMenu.classList.add('display');
 });
 
+let imageModal = document.querySelector('.gallery-modal');
+let imageModalClose = document.querySelector('.gallery-modal__close');
+let galleryItem = document.querySelector('.gallery__item')
+
+galleryItem.addEventListener('click', function(){
+    imageModal.classList.remove('hidden');
+})
+
+imageModalClose.addEventListener('click', function(){
+    imageModal.classList.add('hidden');
+})
