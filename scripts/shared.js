@@ -50,9 +50,10 @@ function openModal() {
   
   function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("gallery-modal__image-container");
+    var slides = document.getElementsByClassName("gallery-modal__container");
     //var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("gallery-modal__image");
+    let captionText = document.getElementById("gallery-modal__info-desc");
+    console.log(captionText);
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -61,7 +62,9 @@ function openModal() {
     //for (i = 0; i < dots.length; i++) {
     //  dots[i].className = dots[i].className.replace(" active", "");
     //}
-    slides[slideIndex-1].style.display = "block";
-    //dots[slideIndex-1].className += " active";
     captionText.innerHTML = slides[slideIndex-1].alt;
+    slides[slideIndex-1].style.display = "flex";
+    //dots[slideIndex-1].className += " active";
+
+    
   }
