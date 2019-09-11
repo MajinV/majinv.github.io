@@ -1,11 +1,8 @@
 const bgimages = [
   "images/banner/eternal-posy-vintage-jug.jpg",
-  "images/banner/eternal-posy-flower-hair-piece.jpg",
-  "images/banner/eternal-posy-candlestick-centrepiece.jpg",
-  "images/banner/eternal-posy-flower-hair-vine.jpg",
-  "images/banner/eternal-posy-seed-favours.jpg",
-  "images/banner/eternal-posy-autumn-rose-centrepiece.jpg",
-  "images/banner/eternal-posy-summer-rose-centrepiece.jpg"
+  "images/banner/eternal-posy-summer-rose-centrepiece.jpg",
+  "images/decorations/anenomy-water-blur.jpg",
+  "images/banner/tea-party-cups-confetti.jpg"
 ];
 
 const heroContainer = document.getElementById("hero-container");
