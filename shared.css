@@ -508,7 +508,7 @@ footer {
   padding-top: 1rem; */
 
 
-  --numcolumns: 4;
+  --numcolumns: 1;
   --gap: 0.25rem;
   --size: calc(100vw / var(--numcolumns));
   display: grid;
@@ -844,10 +844,24 @@ footer {
   }
 
   .gallery {
-    width: 80%;
+    /* width: 80%;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    padding-top: 0rem;
+    padding-top: 0rem; */
+
+
+
+    --numcolumns: 3;
+    --gap: 0.25rem;
+    --size: calc(100vw / var(--numcolumns));
+    display: grid;
+    grid-template-columns: repeat(var(--numcolumns), 1fr);
+    
+    grid-template-rows: auto;
+    gap: var(--gap);
+    align-items: stretch;
+    
+    list-style: none;
   }
 
   .container__content {
