@@ -48,6 +48,7 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+let imageArray = [];
 let favours = [
   {
     id: 'image-001',
@@ -108,7 +109,70 @@ let favours = [
     id: 'image-012',
     src: '../images/favours/eternal-posy-favour-12.jpg',
     alt: 'Seed Bottle Assortment | Wedding Favour',
-  },  
+  },
+];
+
+let decorations = [
+  {
+    id: 'image-001',
+    src: '../images/decorations/1-Teapot-Stack.jpg',
+    alt: 'White Dahlia in Vintage Jug | Table Centrepieces',
+  },
+  {
+    id: 'image-002',
+    src: '../images/decorations/2-Mushrooms.jpg',
+    alt: 'Grand Candle Trio | Table Centrepieces',
+  },
+  {
+    id: 'image-003',
+    src: '../images/decorations/3-Yellow-Jug-1a.jpg',
+    alt: 'White & Pink Rose in Vintage Jug | Table Centrepieces',
+  },
+  {
+    id: 'image-004',
+    src: '../images/decorations/4-Anemone.jpg',
+    alt: 'Large Peony Birdcage | Table Centrepieces',
+  },
+  {
+    id: 'image-005',
+    src: '../images/decorations/5-Butterfly-teapot-4a.jpg',
+    alt: 'Vintage Tea Cup and Pot Tower | Table Centrepieces',
+  },
+  {
+    id: 'image-006',
+    src: '../images/decorations/6-Large-Log.jpg',
+    alt: 'Small Hydrangea Birdcage | Table Centrepieces',
+  },
+  {
+    id: 'image-007',
+    src: '../images/decorations/7-Blue-Jug-3a.jpg',
+    alt: 'Vintage Tea Cup | Table Centrepieces',
+  },
+  {
+    id: 'image-008',
+    src: '../images/decorations/8-Peony.jpg',
+    alt: 'Anenomy Wreath with Water | Table Centrepieces',
+  },
+  {
+    id: 'image-009',
+    src: '../images/decorations/9-Two-tier-teacup-5a.jpg',
+    alt: 'Vintage Afternoon Tea | Table Centrepieces',
+  },
+  {
+    id: 'image-010',
+    src: '../images/decorations/10-hoop.jpg',
+    alt: 'Spring Vintage Wedding | Table Centrepieces',
+  },
+  {
+    id: 'image-011',
+    src: '../images/decorations/11-White-flower.jpg',
+    alt: 'Ivy Wrapped Candle Arrangement | Table Centrepieces',
+  },
+  {
+    id: 'image-012',
+    src: '../images/decorations/12-small-cage.jpg',
+    alt: 'Autumn Seed & Flower Wreath | Table Centrepieces',
+  },
 ];
 
 function drawGallery(imageArray) {
@@ -128,12 +192,24 @@ function drawGallery(imageArray) {
         /></a>
         </div>
       `
-    ).join(' ')
-    }
+    )
+    .join(' ')}
       `;
 }
 
-let galleryContainer = document.getElementById('galleryContainer');
-let markup = drawGallery(favours);
+function determinePage() {
+  let urlPathArray = window.location.pathname.split('/');
 
-galleryContainer.innerHTML = markup;
+  if (urlPathArray.includes('favours')) {
+    imageArray = favours;
+  } else if (urlPathArray.includes('decorations')) {
+    imageArray = decorations;
+  }
+
+  let galleryContainer = document.getElementById('galleryContainer');
+  let markup = drawGallery(imageArray);
+
+  galleryContainer.innerHTML = markup;
+}
+
+determinePage();
