@@ -542,7 +542,7 @@ footer {
   bottom: 0;
   left: 0;
   object-fit: contain; /* Make sure the image isn't distorted */
-  padding: 1vw; /* Add some padding to make it breathe a bit */
+  /* padding: 1vw; Add some padding to make it breathe a bit */
   background: rgba(0, 0, 0, 0.8); /* Dim the background */
 }
 

@@ -173,6 +173,96 @@ let decorations = [
     src: '../images/decorations/12-small-cage.jpg',
     alt: 'Autumn Seed & Flower Wreath | Table Centrepieces',
   },
+  {
+    id: 'image-013',
+    src: '../images/decorations/13-Hibiscus.jpg',
+    alt: 'Dahlia Wreath Closeup | Table Centrepieces',
+  },
+  {
+    id: 'image-014',
+    src: '../images/decorations/14-Tropical-Birdcage-2a.jpg',
+    alt: 'Rose Wreath Closeup | Table Centrepieces',
+  },
+  {
+    id: 'image-015',
+    src: '../images/decorations/15-Lotus.jpg',
+    alt: 'Vintage Flower Jug Selection in Balck and White | Table Centrepieces',
+  },
+  {
+    id: 'image-016',
+    src: '../images/decorations/16-Small-Log.jpg',
+    alt: 'Summer Rose Wreath with Candle | Table Centrepieces',
+  },
+  {
+    id: 'image-017',
+    src: '../images/decorations/17-eternal-posy-centrepiece-22.jpg',
+    alt: 'Seed Favours and Candles | Table Centrepieces',
+  },
+  {
+    id: 'image-018',
+    src: '../images/decorations/18-Fern.jpg',
+    alt: 'Summer Rose Wreath | Table Centrepieces',
+  },
+  {
+    id: 'image-019',
+    src: '../images/decorations/19-eternal-posy-vintage-jug.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-020',
+    src: '../images/decorations/20.jpg',
+    alt: 'Summer Rose Wreath Table Setting | Table Centrepieces',
+  },
+  {
+    id: 'image-021',
+    src: '../images/decorations/21-eternal-posy-centrepiece-9.jpg',
+    alt: 'Ivy Draped Summer Rose Wreath | Table Centrepieces',
+  },
+  {
+    id: 'image-022',
+    src: '../images/decorations/22-eternal-posy-centrepiece-20c.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-023',
+    src: '../images/decorations/23-eternal-posy-centrepiece-20a.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-024',
+    src: '../images/decorations/24-eternal-posy-centrepiece-20b.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-025',
+    src: '../images/decorations/25-eternal-posy-autumn-rose-centrepiece.jpg',
+    alt: 'Autmn Rose | Table Centrepieces',
+  },
+  {
+    id: 'image-026',
+    src: '../images/decorations/26-Fruit-Teapot.jpg',
+    alt: 'Alice Style Teapot | Table Centrepieces',
+  },
+  {
+    id: 'image-027',
+    src: '../images/decorations/27-eternal-posy-centrepiece.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-028',
+    src: '../images/decorations/28-anenomy-water.jpg',
+    alt: 'Modern Anenomy with Water | Table Centrepieces',
+  },
+  {
+    id: 'image-029',
+    src: '../images/decorations/29-pink-jug.jpg',
+    alt: 'Teaparty Decorative Jug | Table Centrepieces',
+  },
+  {
+    id: 'image-030',
+    src: '../images/decorations/30-eternal-posy-candlestick-centrepiece.jpg',
+    alt: 'Rustic Candlesticks | Table Centrepieces',
+  },
 ];
 
 function drawGallery(imageArray) {
