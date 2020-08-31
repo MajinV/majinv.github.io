@@ -274,11 +274,13 @@ function drawGallery(imageArray) {
           <div id="${image.id}" class="gallery__item">
               <a href="#${image.id}" class="zoomin" title="Zoom In"><img
                   src="${image.src}"
-                  alt="${image.alt}" loading="lazy"
+                  alt="${image.alt}" 
+                  
               /></a>
       <a href="#close" class="zoomout" title="Zoom Out" autofocus="true"><img
           src="${image.src}"
-          alt="${image.alt}" loading="lazy"
+          alt="${image.alt}"
+          loading="lazy"
         /></a>
         </div>
       `

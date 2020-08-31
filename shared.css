@@ -591,26 +591,29 @@ footer {
 
 /* Show zoom out (close) link when the tile is targetted */
 .gallery > div:target > a.zoomout {
-  display: block;
+  display: flex;
+  align-items: center;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   position: fixed;
   z-index: 12;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* Stretch out the image */
 .gallery > div > a.zoomout > img {
   object-fit: contain;
-  padding: 1vw;
+  height:80%;
+  /* padding: 1vw;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
   position: fixed;
   z-index: 11;
-  background: rgba(0, 0, 0, 0.8);
+  
 }
 
 /* Put close link on top */
