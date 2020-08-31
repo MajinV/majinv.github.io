@@ -48,6 +48,7 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+let imageArray = [];
 let favours = [
   {
     id: 'image-001',
@@ -108,7 +109,160 @@ let favours = [
     id: 'image-012',
     src: '../images/favours/eternal-posy-favour-12.jpg',
     alt: 'Seed Bottle Assortment | Wedding Favour',
-  },  
+  },
+];
+
+let decorations = [
+  {
+    id: 'image-001',
+    src: '../images/decorations/1-Teapot-Stack.jpg',
+    alt: 'White Dahlia in Vintage Jug | Table Centrepieces',
+  },
+  {
+    id: 'image-002',
+    src: '../images/decorations/2-Mushrooms.jpg',
+    alt: 'Grand Candle Trio | Table Centrepieces',
+  },
+  {
+    id: 'image-003',
+    src: '../images/decorations/3-Yellow-Jug-1a.jpg',
+    alt: 'White & Pink Rose in Vintage Jug | Table Centrepieces',
+  },
+  {
+    id: 'image-004',
+    src: '../images/decorations/4-Anemone.jpg',
+    alt: 'Large Peony Birdcage | Table Centrepieces',
+  },
+  {
+    id: 'image-005',
+    src: '../images/decorations/5-Butterfly-teapot-4a.jpg',
+    alt: 'Vintage Tea Cup and Pot Tower | Table Centrepieces',
+  },
+  {
+    id: 'image-006',
+    src: '../images/decorations/6-Large-Log.jpg',
+    alt: 'Small Hydrangea Birdcage | Table Centrepieces',
+  },
+  {
+    id: 'image-007',
+    src: '../images/decorations/7-Blue-Jug-3a.jpg',
+    alt: 'Vintage Tea Cup | Table Centrepieces',
+  },
+  {
+    id: 'image-008',
+    src: '../images/decorations/8-Peony.jpg',
+    alt: 'Anenomy Wreath with Water | Table Centrepieces',
+  },
+  {
+    id: 'image-009',
+    src: '../images/decorations/9-Two-tier-teacup-5a.jpg',
+    alt: 'Vintage Afternoon Tea | Table Centrepieces',
+  },
+  {
+    id: 'image-010',
+    src: '../images/decorations/10-hoop.jpg',
+    alt: 'Spring Vintage Wedding | Table Centrepieces',
+  },
+  {
+    id: 'image-011',
+    src: '../images/decorations/11-White-flower.jpg',
+    alt: 'Ivy Wrapped Candle Arrangement | Table Centrepieces',
+  },
+  {
+    id: 'image-012',
+    src: '../images/decorations/12-small-cage.jpg',
+    alt: 'Autumn Seed & Flower Wreath | Table Centrepieces',
+  },
+  {
+    id: 'image-013',
+    src: '../images/decorations/13-Hibiscus.jpg',
+    alt: 'Dahlia Wreath Closeup | Table Centrepieces',
+  },
+  {
+    id: 'image-014',
+    src: '../images/decorations/14-Tropical-Birdcage-2a.jpg',
+    alt: 'Rose Wreath Closeup | Table Centrepieces',
+  },
+  {
+    id: 'image-015',
+    src: '../images/decorations/15-Lotus.jpg',
+    alt: 'Vintage Flower Jug Selection in Balck and White | Table Centrepieces',
+  },
+  {
+    id: 'image-016',
+    src: '../images/decorations/16-Small-Log.jpg',
+    alt: 'Summer Rose Wreath with Candle | Table Centrepieces',
+  },
+  {
+    id: 'image-017',
+    src: '../images/decorations/17-eternal-posy-centrepiece-22.jpg',
+    alt: 'Seed Favours and Candles | Table Centrepieces',
+  },
+  {
+    id: 'image-018',
+    src: '../images/decorations/18-Fern.jpg',
+    alt: 'Summer Rose Wreath | Table Centrepieces',
+  },
+  {
+    id: 'image-019',
+    src: '../images/decorations/19-eternal-posy-vintage-jug.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-020',
+    src: '../images/decorations/20.jpg',
+    alt: 'Summer Rose Wreath Table Setting | Table Centrepieces',
+  },
+  {
+    id: 'image-021',
+    src: '../images/decorations/21-eternal-posy-centrepiece-9.jpg',
+    alt: 'Ivy Draped Summer Rose Wreath | Table Centrepieces',
+  },
+  {
+    id: 'image-022',
+    src: '../images/decorations/22-eternal-posy-centrepiece-20c.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-023',
+    src: '../images/decorations/23-eternal-posy-centrepiece-20a.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-024',
+    src: '../images/decorations/24-eternal-posy-centrepiece-20b.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-025',
+    src: '../images/decorations/25-eternal-posy-autumn-rose-centrepiece.jpg',
+    alt: 'Autmn Rose | Table Centrepieces',
+  },
+  {
+    id: 'image-026',
+    src: '../images/decorations/26-Fruit-Teapot.jpg',
+    alt: 'Alice Style Teapot | Table Centrepieces',
+  },
+  {
+    id: 'image-027',
+    src: '../images/decorations/27-eternal-posy-centrepiece.jpg',
+    alt: 'Candle with Crystal Droplets | Table Centrepieces',
+  },
+  {
+    id: 'image-028',
+    src: '../images/decorations/28-anenomy-water.jpg',
+    alt: 'Modern Anenomy with Water | Table Centrepieces',
+  },
+  {
+    id: 'image-029',
+    src: '../images/decorations/29-pink-jug.jpg',
+    alt: 'Teaparty Decorative Jug | Table Centrepieces',
+  },
+  {
+    id: 'image-030',
+    src: '../images/decorations/30-eternal-posy-candlestick-centrepiece.jpg',
+    alt: 'Rustic Candlesticks | Table Centrepieces',
+  },
 ];
 
 function drawGallery(imageArray) {
@@ -128,12 +282,24 @@ function drawGallery(imageArray) {
         /></a>
         </div>
       `
-    ).join(' ')
-    }
+    )
+    .join(' ')}
       `;
 }
 
-let galleryContainer = document.getElementById('galleryContainer');
-let markup = drawGallery(favours);
+function determinePage() {
+  let urlPathArray = window.location.pathname.split('/');
 
-galleryContainer.innerHTML = markup;
+  if (urlPathArray.includes('favours')) {
+    imageArray = favours;
+  } else if (urlPathArray.includes('decorations')) {
+    imageArray = decorations;
+  }
+
+  let galleryContainer = document.getElementById('galleryContainer');
+  let markup = drawGallery(imageArray);
+
+  galleryContainer.innerHTML = markup;
+}
+
+determinePage();

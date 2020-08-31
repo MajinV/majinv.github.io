@@ -542,7 +542,7 @@ footer {
   bottom: 0;
   left: 0;
   object-fit: contain; /* Make sure the image isn't distorted */
-  padding: 1vw; /* Add some padding to make it breathe a bit */
+  /* padding: 1vw; Add some padding to make it breathe a bit */
   background: rgba(0, 0, 0, 0.8); /* Dim the background */
 }
 
@@ -852,7 +852,7 @@ footer {
 
 
     --numcolumns: 3;
-    --gap: 0.25rem;
+    --gap: 0.5rem;
     --size: calc(100vw / var(--numcolumns));
     display: grid;
     grid-template-columns: repeat(var(--numcolumns), 1fr);
@@ -860,7 +860,7 @@ footer {
     grid-template-rows: auto;
     gap: var(--gap);
     align-items: stretch;
-    
+    margin: 0 1rem;
     list-style: none;
   }
 
